@@ -1,0 +1,25 @@
+{
+  "name": "nodebb-plugin-edithistory",
+  "version": "0.4.1-2",
+  "description": "NodeBB Plugin to allow preservation of post edit history.",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwendt/nodebb-plugin-edithistory"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "edit",
+    "history"
+  ],
+  "author": "Ditmar Wendt <dwendt@knights.ucf.edu>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/dwendt/nodebb-plugin-edithistory/issues"
+  },
+  "dependencies": {
+    "async": "~0.2.9",
+    "diff": "~1.2.0"
+  }
+}

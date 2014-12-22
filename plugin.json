@@ -1,0 +1,15 @@
+{
+  "id": "nodebb-plugin-edithistory",
+  "name": "Edit History",
+  "description": "NodeBB plugin to allow edit history of posts to be tracked.",
+  "url": "https://github.com/dwendt/nodebb-plugin-edithistory",
+  "library": "./library.js",
+  "templates": "./templates",
+  "hooks": [
+    { "hook": "static:app.load", "method": "init"},
+    { "hook": "filter:admin.header.build", "method": "adminHeaderBuild" },
+    { "hook": "action:post.edit", "method": "actionPostEdit", "callbacked": true},
+    { "hook": "action:post.purge  ", "method": "actionPostPurge", "callbacked": true}
+  ],
+  "minver": "0.6.0"
+}
